@@ -286,3 +286,10 @@ def clear_history():
 @app.get("/api/health")
 def health():
     return {"status": "ok"}
+
+    @app.get("/")
+def root():
+    return {
+        "message": "Stock Topic Finder API Running",
+        "status": "ok"
+    }
